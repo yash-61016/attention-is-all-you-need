@@ -1,0 +1,10 @@
+# attention_from_scratch.py dependencies
+# Install: pip install -r requirements.txt
+# CUDA 12.3 required for GPU support (RTX 3090)
+# For torch with CUDA 12.3: pip install torch==2.1.0 --index-url https://download.pytorch.org/whl/cu121
+
+torch==2.1.0
+matplotlib==3.7.1
+numpy==1.24.3
+transformers==4.38.2
+
