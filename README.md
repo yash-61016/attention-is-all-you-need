@@ -2,7 +2,7 @@
 
 From-scratch implementation and head-analysis artifact for [Attention Is All You Need](https://arxiv.org/abs/1706.03762) (Vaswani et al., 2017).
 
-Accompanies the blog post: **[Attention Is All You Need: Early Layers Diffuse, Late Layers Precise, the Head Entropy Gradient the Paper Never Measured](https://yashpatel.xyz)**
+Accompanies the blog post: **[Attention Is All You Need: Early Layers Diffuse, Late Layers Precise, the Head Entropy Gradient the Paper Never Measured](https://yashpatel.xyz/blog/attention-is-all-you-need-what-the-paper-s-heads-are-actually-doing-at-each-layer)**
 
 ---
 
