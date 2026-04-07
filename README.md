@@ -54,7 +54,7 @@ Developed on RTX 3090 (24GB VRAM), but both scripts can run on CPU.
 
 ![VRAM scaling plot](./attention_vram_quadratic.png)
 
-**Sample head attention map from the concrete sentence pass:**
+**Sample head attention map for an example sentence:**
 
 ![Attention heatmap](./attention_heatmap.png)
 
