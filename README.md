@@ -75,20 +75,15 @@ Developed on RTX 3090 (24GB VRAM), but both scripts can run on CPU.
 ## Blog-aligned highlights grounded in this codebase
 
 - The scripts operationalize the blog’s main thesis that **head behavior shifts with depth**.
-- `attention_head_analysis.py` computes entropy directly from attention matrices and reports a clear early-vs-late separation:
-  - Early layers (0–3): ~**1.421 nats**
-  - Late layers (8–11): ~**0.497 nats**
-  - Gradient (late − early): **−0.924 nats**
+- `attention_head_analysis.py` computes entropy directly from attention matrices and reports a clear early-vs-late separation (see the **Key finding** section below for exact values).
 - The same pipeline also classifies each head by entropy and diagonal locality, enabling structured categories (`copy`, `local`, `broad`, `mixed`) that can be inspected visually.
 - `attention_from_scratch.py` complements this by validating core attention math and showing the quadratic memory pressure that motivates optimized attention kernels.
 
 ## Key finding
 
-Shannon entropy decreases with depth in GPT-2 small, with late-layer heads substantially sharper than early-layer heads.
-
 ```text
 KEY FINDING: layer-depth entropy gradient
-  Early layers (0-3)  mean entropy : 1.421 nats
-  Late  layers (8-11) mean entropy : 0.497 nats
-  Gradient            (late-early) : -0.924 nats
+  Early layers (0-3) mean entropy: 1.421 nats
+  Late layers (8-11) mean entropy: 0.497 nats
+  Gradient (late-early): -0.924 nats
 ```
